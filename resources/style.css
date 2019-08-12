@@ -3,14 +3,8 @@
   margin-right: 20px; }
 
 .btn-main-nav {
-  width: 200px;
+  width: 175px;
   text-align: center; }
   .btn-main-nav a {
     font-size: 100%;
     text-transform: uppercase; }
-
-.nav-sub {
-  display: none; }
-
-.nav-sub-active {
-  display: block; }
