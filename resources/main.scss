@@ -1,6 +1,18 @@
 // ------------------------------------------------ //
+// COLORS //
+// ------------------------------------------------ //
+$main: #2196f3;
+$main-lighten-3: #90caf9;
+$main-lighten-5: #e3f2fd;
+
+// ------------------------------------------------ //
 // MAIN NAV BAR //
 // ------------------------------------------------ //
+// nav {
+//     box-shadow: none;
+//     -webkit-box-shadow: none;
+// }
+
 .brand-logo {
     font-size: 110% !important;
     margin-right: 20px;
@@ -19,3 +31,27 @@
 // ------------------------------------------------ //
 // SUB NAV BAR //
 // ------------------------------------------------ //
+.tabs .tab {
+    a {
+        color: $main-lighten-3; /*Black color to the text*/
+
+        &:hover {
+            background-color:$main-lighten-5; /*Text color on hover*/
+            color: $main; /*Text color on hover*/
+        }
+        
+        &:focus {
+            background-color:#fff;
+        }
+
+        &:focus.active,
+        &.active    {
+            background-color:$main-lighten-5; /*Background and text color when a tab is active*/
+            color: $main; /*Background and text color when a tab is active*/
+        } 
+    }
+}   
+
+.tabs .indicator {
+    background-color: $main;
+} /*Color of underline*/

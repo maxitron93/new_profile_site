@@ -8,3 +8,24 @@
   .btn-main-nav a {
     font-size: 100%;
     text-transform: uppercase; }
+
+.tabs .tab a {
+  color: #90caf9;
+  /*Black color to the text*/ }
+  .tabs .tab a:hover {
+    background-color: #e3f2fd;
+    /*Text color on hover*/
+    color: #2196f3;
+    /*Text color on hover*/ }
+  .tabs .tab a:focus {
+    background-color: #fff; }
+  .tabs .tab a:focus.active, .tabs .tab a.active {
+    background-color: #e3f2fd;
+    /*Background and text color when a tab is active*/
+    color: #2196f3;
+    /*Background and text color when a tab is active*/ }
+
+.tabs .indicator {
+  background-color: #2196f3; }
+
+/*Color of underline*/
