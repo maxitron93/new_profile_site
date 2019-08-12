@@ -31,6 +31,10 @@ $main-lighten-5: #e3f2fd;
 // ------------------------------------------------ //
 // SUB NAV BAR //
 // ------------------------------------------------ //
+// .nav-sub-software-dev {
+//     transition: 3s;
+// }
+
 .tabs .tab {
     a {
         color: $main-lighten-3; /*Black color to the text*/
@@ -55,3 +59,21 @@ $main-lighten-5: #e3f2fd;
 .tabs .indicator {
     background-color: $main;
 } /*Color of underline*/
+
+@keyframes fadeIn {
+    0% {opacity: 0.1;}
+    100% {opacity: 1;}
+}
+
+.fade-in {
+    animation: fadeIn 0.6s forwards;
+}
+
+@keyframes fadeOut {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+.fade-out {
+    animation: fadeOut 0.6s forwards;
+}
