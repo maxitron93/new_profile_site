@@ -7,6 +7,7 @@ $sub-nav-height: 48px;
 // ------------------------------------------------ //
 // COLORS //
 // ------------------------------------------------ //
+$main-darken-2: #1976d2;
 $main: #2196f3;
 $main-lighten-3: #90caf9;
 $main-lighten-5: #e3f2fd;
@@ -15,8 +16,6 @@ $main-lighten-5: #e3f2fd;
 // MAIN NAV BAR //
 // ------------------------------------------------ //
 nav {
-    // box-shadow: none;
-    // -webkit-box-shadow: none;
     height: $nav-height;
 }
 
@@ -35,8 +34,45 @@ nav {
     }
 }
 
+.icon {
+    font-size: 200%;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 5px;
+}
+
 // ------------------------------------------------ //
-// SUB NAV BAR //
+// MOBILE NAV BAR //
+// ------------------------------------------------ //
+.btn-mobile-nav {
+    $button-height: 70px;
+
+    height: $button-height;
+    cursor: pointer;
+
+    a {
+        height: $button-height !important;
+        padding-top: 10px !important;
+        text-transform: uppercase;
+        color: #fff !important; /*Text color*/
+
+        &:hover {
+            background-color: $main !important; /*Text color on hover*/
+        }
+    }
+
+    &:hover {
+        background-color: $main !important; /*Text color on hover*/
+    }
+
+    &:focus.active,
+    &.active {
+        background-color: $main !important;
+    }
+}
+
+// ------------------------------------------------ //
+// CONTENT CONTAINER //
 // ------------------------------------------------ //
 .tabs {
     height: $sub-nav-height;
@@ -44,7 +80,7 @@ nav {
 
 .tabs .tab {
     a {
-        color: $main-lighten-3; /*Black color to the text*/
+        color: $main-lighten-3; /*Text color*/
 
         &:hover {
             background-color:$main-lighten-5; /*Text color on hover*/
@@ -86,6 +122,16 @@ nav {
 }
 
 // ------------------------------------------------ //
+// ABOUT-PAGE //
+// ------------------------------------------------ //
+
+.about-page-content {
+    border: 1px solid black;
+    min-height: calc(100vh - #{$nav-height} - 100px);
+    margin: 50px;
+}
+
+// ------------------------------------------------ //
 // TABBED-PAGES //
 // ------------------------------------------------ //
 .row {
@@ -103,19 +149,4 @@ nav {
     margin: #{$sub-nav-height} !important;
     min-height: calc(100% - 100px);
     border: 1px solid black;
-}
-
-// ------------------------------------------------ //
-// ABOUT-PAGE //
-// ------------------------------------------------ //
-.about-page-container {
-    min-height: calc(100vh - #{$nav-height});
-    display: flex;
-}
-
-.about-page-content {
-    border: 1px solid black;
-    flex: 1;
-    margin: 50px;
-    // min-height: calc(100% - 100px);
 }
