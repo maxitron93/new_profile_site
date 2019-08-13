@@ -86,7 +86,7 @@ nav {
 }
 
 // ------------------------------------------------ //
-// PAGE //
+// TABBED-PAGES //
 // ------------------------------------------------ //
 .row {
     margin-bottom: 0 !important;
@@ -100,8 +100,22 @@ nav {
 }
 
 .page {
-    margin: 50px !important;
-    // min-height: calc(100vh - #{$nav-height} - #{$sub-nav-height} - 100px) !important;
+    margin: #{$sub-nav-height} !important;
     min-height: calc(100% - 100px);
     border: 1px solid black;
+}
+
+// ------------------------------------------------ //
+// ABOUT-PAGE //
+// ------------------------------------------------ //
+.about-page-container {
+    min-height: calc(100vh - #{$nav-height});
+    display: flex;
+}
+
+.about-page-content {
+    border: 1px solid black;
+    flex: 1;
+    margin: 50px;
+    // min-height: calc(100% - 100px);
 }

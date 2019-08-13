@@ -1,7 +1,15 @@
 const aboutMePageContent = `
-<div class="page">
-    <p>Test</p>
-</div>`
+<div class="about-page-content">
+    <h1>Placeholder</h1>
+    <h1>Placeholder</h1>
+    <h1>Placeholder</h1>
+    <h1>Placeholder</h1>
+    <h1>Placeholder</h1>
+    <h1>Placeholder</h1>
+    <h1>Placeholder</h1>
+    <h1>Placeholder</h1>
+</div>
+`
 
 const placeholderContent = `
 <div class="page">
@@ -12,7 +20,7 @@ const placeholderContent = `
     <h1>Placeholder</h1>
     <h1>Placeholder</h1>
     <h1>Placeholder</h1>
-    
+    <h1>Placeholder</h1>
 </div>
 `
 
@@ -21,28 +29,29 @@ const placeholderContent = `
 // -------------------------------------------- //
 const UIController = (() => {
     const DOMstrings = {
-        subNav: document.querySelector('.sub-nav'),
+        contentContainer: document.querySelector('.content-container'),
         navMainItem: document.querySelectorAll('.btn-main-nav')
     }
 
-    const loadSubNav = (mainNavItem) => {
+    const loadContentContainer = (mainNavItem) => {
         // Define variables
         let subNavHTML
 
-        // Remove old subsav
-        for (child of DOMstrings.subNav.children) {
+        // Remove old content (fade out)
+        for (child of DOMstrings.contentContainer.children) {
             child.classList += ' fade-out'
         }
         
         setTimeout(() => {
-            while (DOMstrings.subNav.firstChild) {
-                DOMstrings.subNav.removeChild(DOMstrings.subNav.firstChild);
+            // Remove old content (remove from UI)
+            while (DOMstrings.contentContainer.firstChild) {
+                DOMstrings.contentContainer.removeChild(DOMstrings.contentContainer.firstChild);
             }
-    
-            // Generate html
+            
+            // Add new content
             if (mainNavItem === 'About Me') {
                 subNavHTML = `
-                <div class="row fade-in">
+                <div class="row fade-in about-page-container">
                     ${aboutMePageContent}
                 </div>`
             } else if (mainNavItem === 'Web Dev') {
@@ -90,9 +99,9 @@ const UIController = (() => {
             }
     
             // Display html
-            DOMstrings.subNav.insertAdjacentHTML('afterbegin', subNavHTML)
+            DOMstrings.contentContainer.insertAdjacentHTML('afterbegin', subNavHTML)
     
-            // Initialise sub-nav
+            // Initialise tabs
             let instance = M.Tabs.init(document.querySelector('.tabs'), {swipeable: true});
         }, 500)
     }
@@ -111,8 +120,8 @@ const UIController = (() => {
 
     return {
         DOMstrings: DOMstrings,
-        loadSubNav: (mainNavItem) => {
-            loadSubNav(mainNavItem)
+        loadContentContainer: (mainNavItem) => {
+            loadContentContainer(mainNavItem)
         },
         changeActiveItem: (target) => {
             changeActiveItem(target)
@@ -128,7 +137,7 @@ const appController = ((UIController) => {
     // Event Listeners
     const setEventListeners = () => {
 
-        // Load sub-nav bar
+        // Event for main-nav buttons
         DOMstrings.navMainItem.forEach((btn) => {
             btn.addEventListener('click', (event) => {
                 // Define variables
@@ -137,8 +146,8 @@ const appController = ((UIController) => {
                 // Get nav item clicked
                 mainNavItem = event.target.innerHTML
 
-                // Load sub-nav bar
-                UIController.loadSubNav(mainNavItem)
+                // Load content
+                UIController.loadContentContainer(mainNavItem)
 
                 // Change active class on main nav
                 UIController.changeActiveItem(event.target)
@@ -149,6 +158,7 @@ const appController = ((UIController) => {
     return {
         initApp: () => {
             setEventListeners()
+            UIController.loadContentContainer('About Me')
         } 
     }
     

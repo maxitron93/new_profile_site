@@ -63,6 +63,15 @@ nav {
   overflow-y: visible !important; }
 
 .page {
-  margin: 50px !important;
+  margin: 48px !important;
   min-height: calc(100% - 100px);
   border: 1px solid black; }
+
+.about-page-container {
+  min-height: calc(100vh - 64px);
+  display: flex; }
+
+.about-page-content {
+  border: 1px solid black;
+  flex: 1;
+  margin: 50px; }
