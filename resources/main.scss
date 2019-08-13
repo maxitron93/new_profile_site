@@ -1,4 +1,10 @@
 // ------------------------------------------------ //
+// SETTINGS //
+// ------------------------------------------------ //
+$nav-height: 64px;
+$sub-nav-height: 48px;
+
+// ------------------------------------------------ //
 // COLORS //
 // ------------------------------------------------ //
 $main: #2196f3;
@@ -8,10 +14,11 @@ $main-lighten-5: #e3f2fd;
 // ------------------------------------------------ //
 // MAIN NAV BAR //
 // ------------------------------------------------ //
-// nav {
-//     box-shadow: none;
-//     -webkit-box-shadow: none;
-// }
+nav {
+    // box-shadow: none;
+    // -webkit-box-shadow: none;
+    height: $nav-height;
+}
 
 .brand-logo {
     font-size: 110% !important;
@@ -31,9 +38,9 @@ $main-lighten-5: #e3f2fd;
 // ------------------------------------------------ //
 // SUB NAV BAR //
 // ------------------------------------------------ //
-// .nav-sub-software-dev {
-//     transition: 3s;
-// }
+.tabs {
+    height: $sub-nav-height;
+}
 
 .tabs .tab {
     a {
@@ -76,4 +83,25 @@ $main-lighten-5: #e3f2fd;
 
 .fade-out {
     animation: fadeOut 0.6s forwards;
+}
+
+// ------------------------------------------------ //
+// PAGE //
+// ------------------------------------------------ //
+.row {
+    margin-bottom: 0 !important;
+}
+
+.tabs-content,
+.carousel,
+.carousel-slider {
+    min-height: calc(100vh - #{$nav-height} - #{$sub-nav-height}) !important;
+    overflow-y: visible !important;
+}
+
+.page {
+    margin: 50px !important;
+    // min-height: calc(100vh - #{$nav-height} - #{$sub-nav-height} - 100px) !important;
+    min-height: calc(100% - 100px);
+    border: 1px solid black;
 }

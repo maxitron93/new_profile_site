@@ -1,3 +1,6 @@
+nav {
+  height: 64px; }
+
 .brand-logo {
   font-size: 110% !important;
   margin-right: 20px; }
@@ -8,6 +11,9 @@
   .btn-main-nav a {
     font-size: 100%;
     text-transform: uppercase; }
+
+.tabs {
+  height: 48px; }
 
 .tabs .tab a {
   color: #90caf9;
@@ -46,3 +52,17 @@
 
 .fade-out {
   animation: fadeOut 0.6s forwards; }
+
+.row {
+  margin-bottom: 0 !important; }
+
+.tabs-content,
+.carousel,
+.carousel-slider {
+  min-height: calc(100vh - 64px - 48px) !important;
+  overflow-y: visible !important; }
+
+.page {
+  margin: 50px !important;
+  min-height: calc(100% - 100px);
+  border: 1px solid black; }
