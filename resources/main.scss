@@ -3,6 +3,9 @@
 // ------------------------------------------------ //
 $nav-height: 64px;
 $sub-nav-height: 48px;
+body {
+    background-color: #f5f5f5;
+}
 
 // ------------------------------------------------ //
 // COLORS //
@@ -126,7 +129,10 @@ nav {
 // ------------------------------------------------ //
 
 .about-page-content {
-    border: 1px solid black;
+    background-color: #fff;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
     min-height: calc(100vh - #{$nav-height} - 100px);
     margin: 50px;
 }
@@ -148,5 +154,8 @@ nav {
 .page {
     margin: #{$sub-nav-height} !important;
     min-height: calc(100% - 100px);
-    border: 1px solid black;
+    background-color: #fff;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
 }
