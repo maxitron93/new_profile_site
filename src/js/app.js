@@ -20,7 +20,7 @@ elements.navMainItem.forEach((btn) => {
         // Update content
         changeContent(navSelection)
 
-        // Change active class on main nav
+        // Change active class on nav bars
         changeNavSelection(navSelection)
     })
 })
@@ -34,7 +34,7 @@ elements.navMobileItem.forEach((btn) => {
         // Update content
         changeContent(navSelection)
 
-        // Change active class on main nav
+        // Change active class on nav bars
         changeNavSelection(navSelection)
     })
 })
