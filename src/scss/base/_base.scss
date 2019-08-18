@@ -1,0 +1,26 @@
+// A place for common settings that get reused
+// They are defined here, but not actually used here
+// e.g. Colours, padding, margin, etc
+
+// ------------------------------------------------ //
+// SETTINGS //
+// ------------------------------------------------ //
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+$nav-height: 64px;
+$sub-nav-height: 48px;
+body {
+    background-color: #f5f5f5;
+}
+
+// ------------------------------------------------ //
+// COLORS //
+// ------------------------------------------------ //
+$main-darken-2: #1976d2;
+$main: #2196f3;
+$main-lighten-3: #90caf9;
+$main-lighten-5: #e3f2fd;
