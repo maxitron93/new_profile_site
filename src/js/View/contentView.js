@@ -46,43 +46,43 @@ const insertNewContent = (navSelection) => {
         subNavHTML = `
         <div class="row fade-in">
             <ul class="tabs">
-                <li class="tab col s2"><a class="active" href="#web-dev-1">Web Dev 1</a></li>
-                <li class="tab col s2"><a href="#web-dev-2">Web Dev 2</a></li>
-                <li class="tab col s2"><a href="#web-dev-3">Web Dev 3</a></li>
-                <li class="tab col s2"><a href="#web-dev-4">Web Dev 4</a></li>
+                <li class="tab col s2"><a class="active" href="#front-end-app-1">Daily Planner</a></li>
+                <li class="tab col s2"><a href="#front-end-app-2">Sorting Simulator</a></li>
+                <li class="tab col s2"><a href="#front-end-app-3">Any Base Calculator</a></li>
+                <li class="tab col s2"><a href="#front-end-app-4">xxxxxxxxxxxxxx</a></li>
             </ul>
-            <div id="web-dev-1" class="col s12">${placeholderContent}</div>
-            <div id="web-dev-2" class="col s12">${placeholderContent}</div>
-            <div id="web-dev-3" class="col s12">${placeholderContent}</div>
-            <div id="web-dev-4" class="col s12">${placeholderContent}</div>
+            <div id="front-end-app-1" class="col s12">${placeholderContent}</div>
+            <div id="front-end-app-2" class="col s12">${placeholderContent}</div>
+            <div id="front-end-app-3" class="col s12">${placeholderContent}</div>
+            <div id="front-end-app-4" class="col s12">${placeholderContent}</div>
         </div>`
     } else if (navSelection === 'item_3') {
         subNavHTML = `
         <div class="row fade-in">
             <ul class="tabs">
-                <li class="tab col s2"><a class="active" href="#android-dev-1">Android Dev 1</a></li>
-                <li class="tab col s2"><a href="#android-dev-2">Android Dev 2</a></li>
-                <li class="tab col s2"><a href="#android-dev-3">Android Dev 3</a></li>
-                <li class="tab col s2"><a href="#android-dev-4">Android Dev 4</a></li>
+                <li class="tab col s2"><a class="active" href="#full-stack-app-1">Timesheets</a></li>
+                <li class="tab col s2"><a href="#full-stack-app-2">P2P Lending</a></li>
+                <li class="tab col s2"><a href="#full-stack-app-3">xxxxxxxxxxxxxx</a></li>
+                <li class="tab col s2"><a href="#full-stack-app-4">xxxxxxxxxxxxxx</a></li>
             </ul>
-            <div id="android-dev-1" class="col s12">${placeholderContent}</div>
-            <div id="android-dev-2" class="col s12">${placeholderContent}</div>
-            <div id="android-dev-3" class="col s12">${placeholderContent}</div>
-            <div id="android-dev-4" class="col s12">${placeholderContent}</div>
+            <div id="full-stack-app-1" class="col s12">${placeholderContent}</div>
+            <div id="full-stack-app-2" class="col s12">${placeholderContent}</div>
+            <div id="full-stack-app-3" class="col s12">${placeholderContent}</div>
+            <div id="full-stack-app-4" class="col s12">${placeholderContent}</div>
         </div>`
     } else if (navSelection === 'item_4') {
         subNavHTML = `
         <div class="row fade-in">
             <ul class="tabs">
-                <li class="tab col s2"><a class="active" href="#data-science-1">Data Science 1</a></li>
-                <li class="tab col s2"><a href="#data-science-2">Data Science 2</a></li>
-                <li class="tab col s2"><a href="#data-science-3">Data Science 3</a></li>
-                <li class="tab col s2"><a href="#data-science-4">Data Science 4</a></li>
+                <li class="tab col s2"><a class="active" href="#data-app-1">xxxxxxxxxxxxxx</a></li>
+                <li class="tab col s2"><a href="#data-app-2">xxxxxxxxxxxxxx</a></li>
+                <li class="tab col s2"><a href="#data-app-3">xxxxxxxxxxxxxx</a></li>
+                <li class="tab col s2"><a href="#data-app-4">xxxxxxxxxxxxxx</a></li>
             </ul>
-            <div id="data-science-1" class="col s12">${placeholderContent}</div>
-            <div id="data-science-2" class="col s12">${placeholderContent}</div>
-            <div id="data-science-3" class="col s12">${placeholderContent}</div>
-            <div id="data-science-4" class="col s12">${placeholderContent}</div>
+            <div id="data-app-1" class="col s12">${placeholderContent}</div>
+            <div id="data-app-2" class="col s12">${placeholderContent}</div>
+            <div id="data-app-3" class="col s12">${placeholderContent}</div>
+            <div id="data-app-4" class="col s12">${placeholderContent}</div>
         </div>`
     }
 
